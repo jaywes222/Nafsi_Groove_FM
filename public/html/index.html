@@ -4,11 +4,19 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nafsi Groove FM</title>
-        <link rel="stylesheet" href="css/styles.css"
+        <link rel="stylesheet" href="css/styles.css">
+        <meta name="description" content="Nafsi Groove FM - Your go-to station for entertainment and updates in your hood. Tune in for the latest shows, news, and events.">
+        <meta name="keywords" content="radio, live streaming, music, news, events, Nairobi, Kenya">
     </head> 
     <body>
         <header>
-            <h1>Nafsi Pamoja Org</h1>
+            <div class="header_container">
+                <img src="" alt="Nafsi groove FM Logo" class="logo">
+            </div>
+            <div class="slogan">
+                <h1>Nafsi Pamoja Org</h1>
+                <p>Your go-to Station for Entertainment and Updates</p>
+            </div>
             <nav>
                 <ul>
                     <li><a href="#about">Shows</a></li>
@@ -25,6 +33,67 @@
         </header>
 
         <main>
+            <section id="carousel" class="carousel">
+                <div class="carousel_container">
+                    <div class="carousel_slide">
+                        <img src="" alt="Slide 1">
+                    </div>
+                    <div class="carousel_slide">
+                        <img src="" alt="Slide 2">
+                    </div>
+                    <div class="carousel_slide">
+                        <img src="" alt="Slide 3">
+                    </div>
+                    <button class="carousel_prev" onclick="prevSlide()">&#10094</button>
+                    <button class="carousel_prev" onclick="nextSlide()">&#10095</button>
+                </div>
+            </section>
+
+            <section id="embedded-player" class="embedded-player">
+                <h1>Listen to Our Station</h1>
+                    <div class="player-container">
+                        <iframe src="URL_TO_EMBEDDED_PLAYER" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+            </section>
+
+            <section id="current_show" class="current_show">
+                <h1>Current Live Show</h1>
+                <div class="current_show_content">
+                    <h2>The Breakfast Club</h2>
+                    <p>Host: Jerry & Patience</p>
+                    <p>Time: 7:00 - 10:00AM</p>
+                    <p>Description:</p>
+                </div>
+            </section>
+
+            <section id="featured-shows" class="featured-shows">
+            <h1>Featured Shows</h1>
+            <div class="featured-show-category">
+                <h2>Recently Played</h2>
+            </div>
+            <div class="featured-show-category">
+                <h2>On Air</h2>
+            </div>
+            <div class="featured-show-category">
+                <h2>Podcasts</h2>
+            </div>
+            <div class="featured-show-category">
+                <h2>Most Viewed</h2>
+            </div>
+            <div class="featured-show-category">
+                <h2>Most Listened</h2>
+            </div>
+            <div class="featured-show-category">
+                <h2>Most Commented</h2>
+            </div>
+        </section>
+
+        <section id="upcoming-events" class="upcoming-events">
+            <h1>Upcoming Events</h1>
+            <div class="events-list">
+            </div>
+        </section>
+
             <section id="about" class="about_page">
                 <h1>About Us</h1>
                 <p>Welcome to NafsiGrooveFM. This Station is here to keep you entertained and upto date with what happens in your hood.</p>
@@ -32,8 +101,20 @@
                 <div class="location">
                     <h3>Location</h3>
                     <p>Block B, Shalom House. Off Ngong Rd, St Daniel Comboni Rd, Nairobi</p>
-                    <p>P.O Box: 55809-00200. NAirobi, Kenya</p>
+                    <p>P.O Box: 55809-00200. Nairobi, Kenya</p>
                 </div>
+
+                <div id="presenter_profiles" class="presenter_profiles">
+                    <h1>Presenter Profiles</h1>
+                        <div class="presenter-list"></div>
+                </div>
+
+        <section id="presenter-profiles" class="presenter-profiles">
+            <h1>Presenter Profiles</h1>
+            <div class="presenter-list">
+                <!-- Add presenter profiles here -->
+            </div>
+        </section>
                 <div class="media">
                     <h3>Our Studio</h3>
                     <img src="" alt="Studio">
@@ -118,7 +199,22 @@
                 </form>
             </section>
 
+            <section id="chatbot" class="chatbot">
+                <h1>Chat with Us</h1>
+            <div class="chatbot-container">
+            </div>
+            </section>
+
             <footer>
+                <section id="newsletter" class="newsletter">
+                    <h1>Subscribe to Our Newsletter</h1>
+                    <form id="newsletter-form">
+                        <label for="newsletter-email">Email:</label>
+                        <input type="email" id="newsletter-email" name="email" required>
+                        <button type="submit">Subscribe</button>
+                    </form>
+                </section>
+
                 <div class="social-icons">
                     <a href="" target="_blank"><img src="" alt="Twitter"</a>
                     <a href="" target="_blank"><img src="" alt="Facebook"</a>
