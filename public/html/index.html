@@ -7,9 +7,127 @@
         <link rel="stylesheet" href="css/styles.css"
     </head> 
     <body>
-        <section><div><p>Hello</p></div></section>
-        
-        
+        <header>
+            <h1>Nafsi Pamoja Org</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">Shows</a></li>
+                    <li><a href="#schedule">Schedule</a></li>
+                    <li><a href="#archive">Archives</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#promotion">Promotions</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#request">Request A Song Now</a></li>
+                </ul>
+            </nav>
+            <button id="live">Listen LIVE!</button>
+        </header>
+
+        <main>
+            <section id="about" class="about_page">
+                <h1>About Us</h1>
+                <p>Welcome to NafsiGrooveFM. This Station is here to keep you entertained and upto date with what happens in your hood.</p>
+                <p>Format: FM/AM/Digital</p>
+                <div class="location">
+                    <h3>Location</h3>
+                    <p>Block B, Shalom House. Off Ngong Rd, St Daniel Comboni Rd, Nairobi</p>
+                    <p>P.O Box: 55809-00200. NAirobi, Kenya</p>
+                </div>
+                <div class="media">
+                    <h3>Our Studio</h3>
+                    <img src="" alt="Studio">
+                    <h3>Our Presenters</h3>
+                    <img src="" alt="Presenter">
+                    <h3>Events</h3>
+                    <img src="" alt="event">
+                </div>
+                <h2>Mission:</h2>
+                <p>Utilize contemporary approaches in arts and culture to address pressing social issues affecting the young people in Kenya</p>
+                <br>
+                <h2>Vision:</h2>
+                <p>Arts and Culture for a Sustainable Africa</p>
+            </section>
+
+            <section id="schedule" class="schedule-page">
+                <h1>Schedule</h1>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Time</th>
+                            <th>Show</th>
+                            <th>Presenter</th>
+                        </tr>
+                    </thead>
+                    <tbody id="schedule-body">
+                        <tr>
+                            <td>7:00 - 10:00 AM</td>
+                            <td>Breakfast Club Show</td>
+                            <td>Jerry & Patience</td>
+                        </tr>
+                    </tbody>
+                    <tbody id="schedule-body">
+                        <tr>
+                            <td>10:00 AM - 1:00 PM</td>
+                            <td>Nafsi Exchange Show</td>
+                            <td>Wahome & G</td>
+                        </tr>
+                    </tbody>
+                    <tbody id="schedule-body">
+                        <tr>
+                            <td>1:00 - 3:00 PM</td>
+                            <td>The WalkMan Show</td>
+                            <td>Jerry & Faith</td>
+                        </tr>
+                    </tbody>
+                    <tbody id="schedule-body">
+                        <tr>
+                            <td>3:00 - 5:00 PM</td>
+                            <td>Positive Vibrations</td>
+                            <td>Empress Rootsy</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section id="archive" class="radio-archive">
+                <h1>Archives</h1>
+                <div id="archive-content">
+
+                </div>
+            </section>
+
+            <section id="articles" class="articles-section">
+                <h1>Top Stories</h1>
+                <div id="articles-content"></div>
+            </section>
+
+            <section id="promotions" class="promotions_page">
+                <h1>Current Promotions</h1>
+                <div id="promotions-content"></div>
+            </section>
+
+            <section id="request" class="song_request">
+                <h1>Request Your Fave Now</h1>
+                <form id="song_request_form">
+                    <label for="nick_name">Your NickName:</label>
+                    <input type="text" id="nick_name" name="nick_name" required>
+                    <label for="song">Song Request:</label>
+                    <input type="text" id="song" name="song" required>
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <footer>
+                <div class="social-icons">
+                    <a href="" target="_blank"><img src="" alt="Twitter"</a>
+                    <a href="" target="_blank"><img src="" alt="Facebook"</a>
+                    <a href="" target="_blank"><img src="" alt="Instagram"</a>
+                    <a href="" target="_blank"><img src="" alt="Youtube"</a>
+                </div>
+            </footer>
+        </main>
+
         <script src="js/scripts.js"></script>
     </body>
 </html>
